@@ -1,13 +1,4 @@
-from category import category
-from get_gif import get_gif_url
 
-for i in range (1,44):
-
-    cat = category(i)
-    tenorArr = get_gif_url("tenor", cat)
-    giphyArr = get_gif_url("giphy", cat)
-
-    html_str = '''
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -19,13 +10,7 @@ for i in range (1,44):
                 <input type="hidden" id="assignmentId" value="" name="assignmentId"/>
 
                 <h2>Please take a look at the following GIFs and choose all appropriate emotions that you've perceived or are able to describe them. Multiple answers are accepted.</h2>
-    '''
-
-    for j in range(5):
-        html_str = html_str + '<img src=' + tenorArr[j] + " width=200px/>"
-        html_str = html_str + '<img src=' + giphyArr[j] + " width=200px/>" 
-
-    html_str += '''
+    <img src=https://media.tenor.com/images/f4c8059e75d21aa301174d4374ec4680/tenor.gif width=200px/><img src=https://media3.giphy.com/media/ZdCJ4G17h7lIsrYfLs/giphy.gif?cid=774ad4fdki85uj2dz5vmewecgmjkm0ponoqo8uwbhrb4wxk4&rid=giphy.gif width=200px/><img src=https://media.tenor.com/images/9baa9cd1467cd8b33a12b353d4392441/tenor.gif width=200px/><img src=https://media2.giphy.com/media/sR2YaENch4sog/giphy.gif?cid=774ad4fdki85uj2dz5vmewecgmjkm0ponoqo8uwbhrb4wxk4&rid=giphy.gif width=200px/><img src=https://media.tenor.com/images/2d04425c74a3285dc6f9b3b602039eaf/tenor.gif width=200px/><img src=https://media0.giphy.com/media/TgOYjtgKpS9jAytUlh/giphy.gif?cid=774ad4fdki85uj2dz5vmewecgmjkm0ponoqo8uwbhrb4wxk4&rid=giphy.gif width=200px/><img src=https://media.tenor.com/images/a87a35975f8219543739eb82eda8e290/tenor.gif width=200px/><img src=https://media2.giphy.com/media/wR32WiuLP6IvK/giphy.gif?cid=774ad4fdki85uj2dz5vmewecgmjkm0ponoqo8uwbhrb4wxk4&rid=giphy.gif width=200px/><img src=https://media.tenor.com/images/4bcd277ec46ba023f7fe596fd0314ca6/tenor.gif width=200px/><img src=https://media3.giphy.com/media/3oz8xPIblfyMdZwM8w/giphy.gif?cid=774ad4fdki85uj2dz5vmewecgmjkm0ponoqo8uwbhrb4wxk4&rid=giphy.gif width=200px/>
                 <fieldset>
                     <p><input name="agree" type="checkbox" value="amusement"/>Amusement</p>
                     <p><input name="agree" type="checkbox" value="excitement"/>Excitement</p>
@@ -51,12 +36,4 @@ for i in range (1,44):
             <script language='Javascript'>turkSetAssignmentID();</script>
         </body>
     </html>
-    '''
-
-    file_name = cat + '.html'
-    with open(file_name, "w") as file:
-        file.write(html_str)
-    print( i ,"done")
-
-
-print ("done")
+    
