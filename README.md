@@ -6,6 +6,6 @@ The webpages are for Amazon MTurk. The goal is to manually annotate 43 GIF categ
 
 To access the questions, please go to:
 
-https://<span></span>jessicahuang523.github.io/<span></span>emotionGIF/xxxx.html
+https://<span></span>jessicahuang523.github.io/<span></span>emotionGIF/pages/xxxx.html
 
 *xxxx* is the individual GIF category names
