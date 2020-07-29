@@ -1,5 +1,5 @@
-def category (idx):
-    cat_dict = {
+def gif (idx):
+    gif_dict = {
         1: 'agree',
         2: 'applause',
         3: 'awww',
@@ -44,4 +44,26 @@ def category (idx):
         42: 'yes',
         43: 'you got this'
     }
-    return cat_dict[idx]
+    return gif_dict[idx]
+
+def emotion(idx):
+    emotion_dict = {
+        1: 'amusement',
+        2: 'excitement',
+        3: 'relief',
+        4: 'anger',
+        5: 'fear',
+        6: 'sadness',
+        7: 'contempt',
+        8: 'guilt',
+        9: 'satisfaction',
+        10: 'contentment',
+        11: 'happiness',
+        12: 'shame',
+        13: 'disgust',
+        14: 'pleasure',
+        15: 'surprise',
+        16: 'embarassment',
+        17: 'pride'
+    }
+    return emotion_dict[idx]
