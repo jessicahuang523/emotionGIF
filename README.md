@@ -9,3 +9,5 @@ To access the questions, please go to:
 https://<span></span>jessicahuang523.github.io/<span></span>emotionGIF/pages/xxxx.html
 
 *xxxx* is the individual GIF category names
+
+Codes for posting on Amazon MTurk and getting GIFs are also included.
